@@ -1643,6 +1643,12 @@ config CPU_OVERCLOCK
         default n
         help
           Overclock configuration for enabling more frequencies
+		
+config PM8921_CHARGER_CONTROL
+	bool "Charger current control driver for PM8921 type hardware"
+	default n
+	help
+		Exposes sysfs controls for various charging currents
 
 config MSM_AVS_HW
 	bool "Enable Adaptive Voltage Scaling (AVS)"
