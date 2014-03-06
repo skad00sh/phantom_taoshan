@@ -1,0 +1,68 @@
+v1:
+Initial Release. More features to come soon. 
+
+v2:
+Updated to 4.2.2.
+
+v3:
+Fixed WiFi.
+
+v4:
+Major update.
+1- Intelli-plug 2.0
+2- Overclocked up to 1.5 Ghz.
+3- PS3 Controller Support.
+4- Simple I/O Scheduler.
+5- Tweaked VM Readahead to 2048 kb.
+6- Voltage Control.
+7- Force 500Ma charging on unknown wall chargers and car chargers.
+8- Disabled Gentle Fair Sleeps and enabled ARCH_POWER.
+9- Added Wheatley Governer.
+10- O3 Compiler optimizations.
+11- Compiled using NEON compiler optimizations.
+
+v5:
+Initial KitKat support.
+Check OP for list of features on KitKat kernel, Jellybean kernel is still limited to v4.5
+
+v6:
+Introducing newer Intelli-plug in kernel. 
+OC up to 1.5Ghz
+Userspace voltage control.
+Newer Eco mode.
+Dynamic Fsync 2.0.
+Added ARM optimization flags while compiling.
+Lock initial TCP window size to 64k (Improves network ping and output)
+Asynchronous I/O latency to a solid-state disk greatly increased
+Added optimized AES and SHA1 routines.
+Optimized apply_slack() method for size and speed
+Entropy tweaks.
+Patches from mainline 3.5 to hopefully help with hotplug efficiency.
+Added touch boost support for taoshan touchpad driver in Intelli-plug.
+Dynamic management of dirty page writebacks
+Salvaged some RAM.
+Disabled unwinding support.
+
+..and some more patches and tweaks which I probably forgot to mention.
+
+
+v6.1:
+KitKat:
+Switched to TWRP 2.6.3.0 instead of very very old CWM.
+
+Jellybean:
+Two versions of kernel: OC and NON-OC, just like KitKat kernel. 
+Switched to TWRP 2.6.3.0 instead of very very old CWM.
+Introducing newer Intelli-plug in kernel. 
+Added more ARM optimization flags.
+Lock initial TCP window size to 64k (Improves network ping and output).
+Asynchronous I/O latency to a solid-state disk greatly increased.
+Added optimized AES and SHA1 routines.
+Optimized apply_slack() method for size and speed
+Entropy tweaks.
+Patches from mainline 3.5 to hopefully help with hotplug efficiency.
+Added touch boost support for taoshan touchpad driver in Intelli-plug.
+Salvaged some RAM.
+Disabled unwinding support.
+Removed Simple I/O Scheduler.
+Removed Wheatley governer.
