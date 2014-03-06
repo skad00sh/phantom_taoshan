@@ -66,3 +66,10 @@ Salvaged some RAM.
 Disabled unwinding support.
 Removed Simple I/O Scheduler.
 Removed Wheatley governer.
+
+v6.2:
+KitKat:
+Enabled SELINUX at kernel for better compatibility with KitKat, flashing zips of KitKat ROMs wasn't possible without this in recovery.
+
+Jellybean:
+No changes.
