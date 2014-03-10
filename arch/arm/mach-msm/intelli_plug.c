@@ -46,7 +46,7 @@ static DEFINE_MUTEX(intelli_plug_mutex);
 
 struct delayed_work intelli_plug_work;
 
-static unsigned int intelli_plug_active = 0;
+static unsigned int intelli_plug_active = 1;
 module_param(intelli_plug_active, uint, 0644);
 
 static unsigned int eco_mode_active = 0;
@@ -355,7 +355,7 @@ static void intelli_plug_input_event(struct input_handle *handle,
 static int input_dev_filter(const char *input_dev_name)
 {
 	if (strstr(input_dev_name, "touchscreen") ||
-		strstr(input_dev_name, "cyttsp3-i2c") ||
+		strstr(input_dev_name, "cyttsp3_i2c") ||
 		strstr(input_dev_name, "sec_touchscreen") ||
 		strstr(input_dev_name, "touch_dev") ||
 		strstr(input_dev_name, "-keypad") ||
