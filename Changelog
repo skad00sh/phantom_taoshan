@@ -73,3 +73,21 @@ Enabled SELINUX at kernel for better compatibility with KitKat, flashing zips of
 
 Jellybean:
 No changes.
+
+v7:
+Merged Internal storage fix by @siankatabg	into the KitKat kernel. I'll post extra work to be done by user too.
+Switched to auto hot plug from intelli-plug. Reason is that when I updated intelli-plug as per latest updates by faux123 and added his special dual core intelli-plug, device started lagging like hell. If anybody can help me out with fixing dual core intelli-plug, feel free to send a pull request on github.
+Switched to latest Linaro GCC 4.7.4 with optimization for cortex A15 CPUs. You'll notice the bump in smoothness. 
+Added more flags for cortex A15 while compiling. Smooooth.
+Added CPU OC up to 1.7 Ghz.
+Complete SELinux integration, now you can change mode between permissive and enforcing too. 
+Fixed over ride of frequency of second core completely(I need feedback on this).
+Introducing Intelli-thermal in kernel which is a better and smoother alternative to stock thermal controller, I have turned off stock thermal monitor completely. 
+Added latest intelli-active governer with touch boost support for taoshan touchpad driver.
+Introducing Charger Control found in Thunderzap kernel. Thanks to @varun.chitre15
+Fixed date and time stamps in recovery.
+Asynchronous fsync: Initial extraction from HTC.
+Enabled Westwood TCP Congession.
+Enabled Sony PS3 controller support back.
+Changed boot splash logo to a more funky and cooler Phantom kernel one.
+Updated TWRP to v2.7.
